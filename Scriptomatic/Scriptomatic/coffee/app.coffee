@@ -1,0 +1,18 @@
+﻿console.log(
+    desktop
+        .showDesktop()
+        .run('calc.exe')
+        .wait(1000)
+        .windowsByName('Calculator')
+            .restore()
+            .findAndClick(['Clear'])
+            .findAndClick(['1', '2', '3'])
+            .findAndClick(['Add'])
+            .findAndClick(['4', '5', '6'])
+            .findAndClick(['Divide'])
+            .findAndClick(['2'])
+            .findAndClick(['Equals'])
+            .labels()
+                .get(3)
+                .value()
+)
