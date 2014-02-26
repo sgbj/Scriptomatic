@@ -15,19 +15,6 @@ Examples
 Automating the calculator:
 
 ```coffeescript
-<<<<<<< HEAD
-desktop.windows().minimize()
-```
-
-Pressing 3 on a calculator:
-
-```coffeescript
-desktop
-    .windows((w) -> w.name() == 'Calculator')
-    .button((b) -> b.name() == '3')
-    .click()
-```
-=======
 console.log(
     desktop
         .showDesktop()
@@ -47,4 +34,3 @@ console.log(
                 .value()
 )
 ```
->>>>>>> added more stuff to the API
